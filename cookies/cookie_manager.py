@@ -13,8 +13,8 @@ from xvfbwrapper import Xvfb
 import traceback
 
 # --- Settings ---
-GMAIL_EMAIL = "you_gmail" # use your gmail 
-GMAIL_PASSWORD = "password_gmail" #Gmail Password
+GMAIL_EMAIL = "" # use your gmail 
+GMAIL_PASSWORD = "" #Gmail Password
 
 BASE_DIR = "/root/YukkiMusicFlex" #don't change it!
 COOKIES_DIR = os.path.join(BASE_DIR, "cookies")
