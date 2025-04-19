@@ -31,9 +31,9 @@ def load_yaml_file(file_path: str) -> dict:
         return yaml.safe_load(file)
 
 
-def get_command(lang: str = "en") -> str | list[str]:
+def get_command(lang: str = "ar") -> str | list[str]:
     if lang not in commands:
-        lang = "en"
+        lang = "ar"
     return commands[lang]
 
 
@@ -110,7 +110,7 @@ def command(
         try:
             _ = get_string(lang_code)
         except Exception:
-            _ = get_string("en")
+            _ = get_string("ar")
 
         if not await is_maintenance():
             if (
